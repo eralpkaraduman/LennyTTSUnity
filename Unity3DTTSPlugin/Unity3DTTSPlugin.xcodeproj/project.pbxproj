@@ -13,7 +13,7 @@
 		5386F3ED1DF5FD790062B580 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5386F3EB1DF5FD790062B580 /* Main.storyboard */; };
 		5386F3EF1DF5FD790062B580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5386F3EE1DF5FD790062B580 /* Assets.xcassets */; };
 		5386F3F21DF5FD790062B580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5386F3F01DF5FD790062B580 /* LaunchScreen.storyboard */; };
-		5386F3FF1DF5FE430062B580 /* TTSPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5386F3FE1DF5FE430062B580 /* TTSPlugin.m */; };
+		5386F4021DF6049F0062B580 /* TTSPlugin.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5386F4011DF6049F0062B580 /* TTSPlugin.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		5386F3EE1DF5FD790062B580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5386F3F11DF5FD790062B580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5386F3F31DF5FD790062B580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5386F3FD1DF5FE430062B580 /* TTSPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTSPlugin.h; path = Unity3DTTSPlugin/TTSPlugin.h; sourceTree = "<group>"; };
-		5386F3FE1DF5FE430062B580 /* TTSPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTSPlugin.m; path = Unity3DTTSPlugin/TTSPlugin.m; sourceTree = "<group>"; };
+		5386F4001DF6049F0062B580 /* TTSPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTSPlugin.h; path = ../TTSTest/Assets/TTS/Plugin/iOS/TTSPlugin.h; sourceTree = "<group>"; };
+		5386F4011DF6049F0062B580 /* TTSPlugin.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = TTSPlugin.mm; path = ../TTSTest/Assets/TTS/Plugin/iOS/TTSPlugin.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +86,8 @@
 		5386F3F91DF5FD870062B580 /* TTSPlugin */ = {
 			isa = PBXGroup;
 			children = (
-				5386F3FD1DF5FE430062B580 /* TTSPlugin.h */,
-				5386F3FE1DF5FE430062B580 /* TTSPlugin.m */,
+				5386F4001DF6049F0062B580 /* TTSPlugin.h */,
+				5386F4011DF6049F0062B580 /* TTSPlugin.mm */,
 			);
 			name = TTSPlugin;
 			sourceTree = "<group>";
@@ -164,7 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5386F3FF1DF5FE430062B580 /* TTSPlugin.m in Sources */,
+				5386F4021DF6049F0062B580 /* TTSPlugin.mm in Sources */,
 				5386F3EA1DF5FD790062B580 /* ViewController.m in Sources */,
 				5386F3E71DF5FD790062B580 /* AppDelegate.m in Sources */,
 				5386F3E41DF5FD790062B580 /* main.m in Sources */,

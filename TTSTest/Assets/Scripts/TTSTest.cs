@@ -5,7 +5,7 @@ public class TTSTest : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		TTSPlugin.CallNativePlugin ();
 	}
 	
 	// Update is called once per frame

@@ -9,5 +9,12 @@
 #import "TTSPlugin.h"
 
 @implementation TTSPlugin
-
 @end
+
+extern "C" {
+    void FooPluginFunction();
+}
+
+void FooPluginFunction() {
+    NSLog(@"hello unity");
+}
