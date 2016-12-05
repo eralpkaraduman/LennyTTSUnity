@@ -863,6 +863,7 @@ extern const int32_t g_FieldOffsetTable1327[3];
 extern const int32_t g_FieldOffsetTable1330[1];
 extern const int32_t g_FieldOffsetTable1331[5];
 extern const int32_t g_FieldOffsetTable1332[1];
+extern const int32_t g_FieldOffsetTable1337[1];
 
 extern const int32_t* g_FieldOffsetTable[1339] = 
 {
@@ -2203,7 +2204,7 @@ extern const int32_t* g_FieldOffsetTable[1339] =
 	NULL,
 	NULL,
 	NULL,
-	NULL,
+	g_FieldOffsetTable1337,
 	NULL,
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize0;

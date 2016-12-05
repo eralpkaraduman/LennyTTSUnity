@@ -9350,6 +9350,7 @@ extern const Il2CppType U3CModuleU3E_t86524796_1_0_0 = { (void*)1336, 0, IL2CPP_
 extern const Il2CppType TTSTest_t4019969285_0_0_0 = { (void*)1337, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType TTSTest_t4019969285_1_0_0 = { (void*)1337, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
+extern const Il2CppType TTSPlugin_t1906882278_0_0_6 = { (void*)1338, 6, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType TTSPlugin_t1906882278_0_0_0 = { (void*)1338, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType TTSPlugin_t1906882278_1_0_0 = { (void*)1338, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
@@ -9403,7 +9404,7 @@ extern const Il2CppType TypeTagU5BU5D_t172815715_0_0_0 = { (void*)&TypeTag_t2420
 
 extern const Il2CppType ITrackingHandler_t2228500544_0_0_0;
 extern const Il2CppType ITrackingHandlerU5BU5D_t3684998849_0_0_0 = { (void*)&ITrackingHandler_t2228500544_0_0_0, 0, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
-extern const Il2CppType* const  g_Il2CppTypeTable[5165] = 
+extern const Il2CppType* const  g_Il2CppTypeTable[5166] = 
 {
 	&IEnumerator_1_t1787714124_0_0_0,
 	&Il2CppObject_0_0_0,
@@ -14516,6 +14517,7 @@ extern const Il2CppType* const  g_Il2CppTypeTable[5165] =
 	&U3CModuleU3E_t86524796_1_0_0,
 	&TTSTest_t4019969285_0_0_0,
 	&TTSTest_t4019969285_1_0_0,
+	&TTSPlugin_t1906882278_0_0_6,
 	&TTSPlugin_t1906882278_0_0_0,
 	&TTSPlugin_t1906882278_1_0_0,
 	&IEnumerator_1_t3372776513_0_0_0,

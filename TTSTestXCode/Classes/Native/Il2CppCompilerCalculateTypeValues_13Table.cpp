@@ -196,6 +196,10 @@ extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1334 = { 0, 0, 0, 0 }
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1335 = { sizeof (U3CModuleU3E_t86524795), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1336 = { sizeof (U3CModuleU3E_t86524796), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1337 = { sizeof (TTSTest_t4019969285), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1337[1] = 
+{
+	TTSTest_t4019969285::get_offset_of_tts_2(),
+};
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1338 = { sizeof (TTSPlugin_t1906882278), -1, 0, 0 };
 #ifdef __clang__
 #pragma clang diagnostic pop

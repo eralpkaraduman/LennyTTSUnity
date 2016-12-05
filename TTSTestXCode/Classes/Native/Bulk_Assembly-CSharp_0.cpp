@@ -15,6 +15,8 @@
 
 // TTSPlugin
 struct TTSPlugin_t1906882278;
+// System.String
+struct String_t;
 // TTSTest
 struct TTSTest_t4019969285;
 
@@ -60,7 +62,7 @@ extern "C"  void TTSPlugin_FooPluginFunction_m2070457780 (Il2CppObject * __this 
 extern Il2CppClass* Debug_t4195163081_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1292533319;
 extern const uint32_t TTSPlugin_CallNativePlugin_m2024306695_MetadataUsageId;
-extern "C"  void TTSPlugin_CallNativePlugin_m2024306695 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+extern "C"  void TTSPlugin_CallNativePlugin_m2024306695 (TTSPlugin_t1906882278 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
@@ -72,6 +74,24 @@ extern "C"  void TTSPlugin_CallNativePlugin_m2024306695 (Il2CppObject * __this /
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t4195163081_il2cpp_TypeInfo_var);
 		Debug_Log_m1731103628(NULL /*static, unused*/, _stringLiteral1292533319, /*hidden argument*/NULL);
 		TTSPlugin_FooPluginFunction_m2070457780(NULL /*static, unused*/, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void TTSPlugin::HelloUnity(System.String)
+extern Il2CppClass* Debug_t4195163081_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2267153550;
+extern const uint32_t TTSPlugin_HelloUnity_m2437525600_MetadataUsageId;
+extern "C"  void TTSPlugin_HelloUnity_m2437525600 (TTSPlugin_t1906882278 * __this, String_t* ___message0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (TTSPlugin_HelloUnity_m2437525600_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t4195163081_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, _stringLiteral2267153550, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -87,7 +107,9 @@ extern "C"  void TTSTest__ctor_m1292183558 (TTSTest_t4019969285 * __this, const 
 extern "C"  void TTSTest_Start_m239321350 (TTSTest_t4019969285 * __this, const MethodInfo* method)
 {
 	{
-		TTSPlugin_CallNativePlugin_m2024306695(NULL /*static, unused*/, /*hidden argument*/NULL);
+		TTSPlugin_t1906882278 * L_0 = __this->get_tts_2();
+		NullCheck(L_0);
+		TTSPlugin_CallNativePlugin_m2024306695(L_0, /*hidden argument*/NULL);
 		return;
 	}
 }

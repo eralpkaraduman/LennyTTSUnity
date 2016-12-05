@@ -286,6 +286,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6EEJM5R5MF;
+				GCC_PREPROCESSOR_DEFINITIONS = "UNITY_DEV=1";
 				INFOPLIST_FILE = Unity3DTTSPlugin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.superdamage.Unity3DTTSPlugin;
@@ -298,6 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6EEJM5R5MF;
+				GCC_PREPROCESSOR_DEFINITIONS = "UNITY_DEV=1";
 				INFOPLIST_FILE = Unity3DTTSPlugin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.superdamage.Unity3DTTSPlugin;

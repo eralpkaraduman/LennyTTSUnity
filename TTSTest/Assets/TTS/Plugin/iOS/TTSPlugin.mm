@@ -8,6 +8,8 @@
 
 #import "TTSPlugin.h"
 
+void UnitySendMessage( const char * className, const char * methodName, const char * param );
+
 @implementation TTSPlugin
 @end
 
@@ -17,4 +19,12 @@ extern "C" {
 
 void FooPluginFunction() {
     NSLog(@"hello unity");
+
+    UnitySendMessage( "TTSPlugin", "HelloUnity", "Hello Unity!" );
 }
+
+#ifdef UNITY_DEV
+
+void UnitySendMessage( const char * className, const char * methodName, const char * param ) { }
+
+#endif
