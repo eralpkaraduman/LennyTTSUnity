@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5386F3E41DF5FD790062B580 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5386F3E31DF5FD790062B580 /* main.m */; };
+		5386F3E71DF5FD790062B580 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5386F3E61DF5FD790062B580 /* AppDelegate.m */; };
+		5386F3EA1DF5FD790062B580 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5386F3E91DF5FD790062B580 /* ViewController.m */; };
+		5386F3ED1DF5FD790062B580 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5386F3EB1DF5FD790062B580 /* Main.storyboard */; };
+		5386F3EF1DF5FD790062B580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5386F3EE1DF5FD790062B580 /* Assets.xcassets */; };
+		5386F3F21DF5FD790062B580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5386F3F01DF5FD790062B580 /* LaunchScreen.storyboard */; };
+		5386F3FF1DF5FE430062B580 /* TTSPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5386F3FE1DF5FE430062B580 /* TTSPlugin.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5386F3DF1DF5FD790062B580 /* Unity3DTTSPlugin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unity3DTTSPlugin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5386F3E31DF5FD790062B580 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5386F3E51DF5FD790062B580 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5386F3E61DF5FD790062B580 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5386F3E81DF5FD790062B580 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5386F3E91DF5FD790062B580 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5386F3EC1DF5FD790062B580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5386F3EE1DF5FD790062B580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5386F3F11DF5FD790062B580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5386F3F31DF5FD790062B580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5386F3FD1DF5FE430062B580 /* TTSPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTSPlugin.h; path = Unity3DTTSPlugin/TTSPlugin.h; sourceTree = "<group>"; };
+		5386F3FE1DF5FE430062B580 /* TTSPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTSPlugin.m; path = Unity3DTTSPlugin/TTSPlugin.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5386F3DC1DF5FD790062B580 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5386F3D61DF5FD790062B580 = {
+			isa = PBXGroup;
+			children = (
+				5386F3F91DF5FD870062B580 /* TTSPlugin */,
+				5386F3E11DF5FD790062B580 /* Unity3DTTSPlugin */,
+				5386F3E01DF5FD790062B580 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5386F3E01DF5FD790062B580 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5386F3DF1DF5FD790062B580 /* Unity3DTTSPlugin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5386F3E11DF5FD790062B580 /* Unity3DTTSPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				5386F3E51DF5FD790062B580 /* AppDelegate.h */,
+				5386F3E61DF5FD790062B580 /* AppDelegate.m */,
+				5386F3E81DF5FD790062B580 /* ViewController.h */,
+				5386F3E91DF5FD790062B580 /* ViewController.m */,
+				5386F3EB1DF5FD790062B580 /* Main.storyboard */,
+				5386F3EE1DF5FD790062B580 /* Assets.xcassets */,
+				5386F3F01DF5FD790062B580 /* LaunchScreen.storyboard */,
+				5386F3F31DF5FD790062B580 /* Info.plist */,
+				5386F3E21DF5FD790062B580 /* Supporting Files */,
+			);
+			path = Unity3DTTSPlugin;
+			sourceTree = "<group>";
+		};
+		5386F3E21DF5FD790062B580 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5386F3E31DF5FD790062B580 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5386F3F91DF5FD870062B580 /* TTSPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				5386F3FD1DF5FE430062B580 /* TTSPlugin.h */,
+				5386F3FE1DF5FE430062B580 /* TTSPlugin.m */,
+			);
+			name = TTSPlugin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5386F3DE1DF5FD790062B580 /* Unity3DTTSPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5386F3F61DF5FD790062B580 /* Build configuration list for PBXNativeTarget "Unity3DTTSPlugin" */;
+			buildPhases = (
+				5386F3DB1DF5FD790062B580 /* Sources */,
+				5386F3DC1DF5FD790062B580 /* Frameworks */,
+				5386F3DD1DF5FD790062B580 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Unity3DTTSPlugin;
+			productName = Unity3DTTSPlugin;
+			productReference = 5386F3DF1DF5FD790062B580 /* Unity3DTTSPlugin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5386F3D71DF5FD790062B580 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Super Damage";
+				TargetAttributes = {
+					5386F3DE1DF5FD790062B580 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 6EEJM5R5MF;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5386F3DA1DF5FD790062B580 /* Build configuration list for PBXProject "Unity3DTTSPlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5386F3D61DF5FD790062B580;
+			productRefGroup = 5386F3E01DF5FD790062B580 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5386F3DE1DF5FD790062B580 /* Unity3DTTSPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5386F3DD1DF5FD790062B580 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5386F3F21DF5FD790062B580 /* LaunchScreen.storyboard in Resources */,
+				5386F3EF1DF5FD790062B580 /* Assets.xcassets in Resources */,
+				5386F3ED1DF5FD790062B580 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5386F3DB1DF5FD790062B580 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5386F3FF1DF5FE430062B580 /* TTSPlugin.m in Sources */,
+				5386F3EA1DF5FD790062B580 /* ViewController.m in Sources */,
+				5386F3E71DF5FD790062B580 /* AppDelegate.m in Sources */,
+				5386F3E41DF5FD790062B580 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5386F3EB1DF5FD790062B580 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5386F3EC1DF5FD790062B580 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5386F3F01DF5FD790062B580 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5386F3F11DF5FD790062B580 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5386F3F41DF5FD790062B580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5386F3F51DF5FD790062B580 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5386F3F71DF5FD790062B580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6EEJM5R5MF;
+				INFOPLIST_FILE = Unity3DTTSPlugin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.superdamage.Unity3DTTSPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5386F3F81DF5FD790062B580 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6EEJM5R5MF;
+				INFOPLIST_FILE = Unity3DTTSPlugin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.superdamage.Unity3DTTSPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5386F3DA1DF5FD790062B580 /* Build configuration list for PBXProject "Unity3DTTSPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5386F3F41DF5FD790062B580 /* Debug */,
+				5386F3F51DF5FD790062B580 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5386F3F61DF5FD790062B580 /* Build configuration list for PBXNativeTarget "Unity3DTTSPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5386F3F71DF5FD790062B580 /* Debug */,
+				5386F3F81DF5FD790062B580 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5386F3D71DF5FD790062B580 /* Project object */;
+}
