@@ -8082,8 +8082,8 @@ extern "C" void TypeInferenceRuleAttribute__ctor_m2173394041 ();
 extern "C" void TypeInferenceRuleAttribute_ToString_m318752778 ();
 extern "C" void WebRequestUtils_RedirectTo_m914411020 ();
 extern "C" void TTSPlugin__ctor_m416989509 ();
-extern "C" void TTSPlugin_FooPluginFunction_m2070457780 ();
-extern "C" void TTSPlugin_CallNativePlugin_m2024306695 ();
+extern "C" void TTSPlugin_FooPluginFunction_m3576419790 ();
+extern "C" void TTSPlugin_CallNativePlugin_m3528239707 ();
 extern "C" void TTSPlugin_HelloUnity_m2437525600 ();
 extern "C" void TTSTest__ctor_m1292183558 ();
 extern "C" void TTSTest_Start_m239321350 ();
@@ -16161,8 +16161,8 @@ extern const Il2CppMethodPointer g_MethodPointers[8077] =
 	TypeInferenceRuleAttribute_ToString_m318752778,
 	WebRequestUtils_RedirectTo_m914411020,
 	TTSPlugin__ctor_m416989509,
-	TTSPlugin_FooPluginFunction_m2070457780,
-	TTSPlugin_CallNativePlugin_m2024306695,
+	TTSPlugin_FooPluginFunction_m3576419790,
+	TTSPlugin_CallNativePlugin_m3528239707,
 	TTSPlugin_HelloUnity_m2437525600,
 	TTSTest__ctor_m1292183558,
 	TTSTest_Start_m239321350,

@@ -33,11 +33,20 @@ void UnitySendMessage( const char * className, const char * methodName, const ch
 @end
 
 extern "C" {
-    void FooPluginFunction();
+    void FooPluginFunction(char* text);
 }
 
-void FooPluginFunction() {
-    NSLog(@"hello unity");
+static TTSPlugin *tts = nil;
+
+void FooPluginFunction(char* text) {
+
+    if (tts == nil) {
+        tts = [[TTSPlugin alloc] init];
+    }
+
+    NSString *utf8String = [NSString stringWithCString:text encoding:NSUTF8StringEncoding];
+
+    [tts beginSpeakingWithString:utf8String];
 
     UnitySendMessage( "TTSPlugin", "HelloUnity", "Hello Unity!" );
 }

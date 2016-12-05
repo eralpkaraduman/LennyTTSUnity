@@ -7,7 +7,7 @@ public class TTSTest : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		tts.CallNativePlugin ();
+		tts.CallNativePlugin ("From Unity, With Love!");
 	}
 	
 	// Update is called once per frame
