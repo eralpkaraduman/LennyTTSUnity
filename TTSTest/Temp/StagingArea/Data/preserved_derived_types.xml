@@ -1,0 +1,6 @@
+<linker>
+<assembly fullname="Assembly-CSharp">
+<type fullname="TTSTest" preserve="all"/>
+<type fullname="TTSPlugin" preserve="all"/>
+</assembly>
+</linker>
