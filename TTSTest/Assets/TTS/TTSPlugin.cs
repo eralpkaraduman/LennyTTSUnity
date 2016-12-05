@@ -13,6 +13,6 @@ public class TTSPlugin : MonoBehaviour {
 	}
 
 	public void HelloUnity(string message) {
-		Debug.Log ("TTS: Hello Unity");
+		Debug.Log ("TTS: "+ message);
 	}
 }

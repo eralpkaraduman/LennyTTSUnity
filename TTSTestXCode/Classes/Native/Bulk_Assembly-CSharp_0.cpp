@@ -32,6 +32,7 @@ struct TTSTest_t4019969285;
 #include "UnityEngine_UnityEngine_Debug4195163081MethodDeclarations.h"
 #include "mscorlib_System_String7231557.h"
 #include "mscorlib_System_Object4170816371.h"
+#include "mscorlib_System_String7231557MethodDeclarations.h"
 #include "AssemblyU2DCSharp_TTSTest4019969285.h"
 #include "AssemblyU2DCSharp_TTSTest4019969285MethodDeclarations.h"
 
@@ -78,8 +79,9 @@ extern "C"  void TTSPlugin_CallNativePlugin_m2024306695 (TTSPlugin_t1906882278 *
 	}
 }
 // System.Void TTSPlugin::HelloUnity(System.String)
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
 extern Il2CppClass* Debug_t4195163081_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral2267153550;
+extern Il2CppCodeGenString* _stringLiteral80159801;
 extern const uint32_t TTSPlugin_HelloUnity_m2437525600_MetadataUsageId;
 extern "C"  void TTSPlugin_HelloUnity_m2437525600 (TTSPlugin_t1906882278 * __this, String_t* ___message0, const MethodInfo* method)
 {
@@ -90,8 +92,11 @@ extern "C"  void TTSPlugin_HelloUnity_m2437525600 (TTSPlugin_t1906882278 * __thi
 		s_Il2CppMethodIntialized = true;
 	}
 	{
+		String_t* L_0 = ___message0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_1 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral80159801, L_0, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t4195163081_il2cpp_TypeInfo_var);
-		Debug_Log_m1731103628(NULL /*static, unused*/, _stringLiteral2267153550, /*hidden argument*/NULL);
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
 		return;
 	}
 }
