@@ -19,7 +19,7 @@ Eralp Karaduman
 
 - Lets you know when it starts speaking.
 - Lets you know when it finishes speaking.
-- Lets you know when it reads a spesific word of the text.
+- Lets you know when it reads a specific word of the text.
 
 See the `TTSTest.cs` class in TTSTest Unity3D project for details.
 
@@ -55,4 +55,4 @@ See the `TTSTest.cs` class in TTSTest Unity3D project for details.
 
  - The XCode project Unity3DTTSPlugin is not generated game code from Unity3D. It's used for developing the native side of the plugin
 
- - Folder TTSTestXCode is ignored since its used for development.
+ - Folder TTSTestXCode is ignored since its used for development in generating the intermediate Unity3D iOS XCode project.
