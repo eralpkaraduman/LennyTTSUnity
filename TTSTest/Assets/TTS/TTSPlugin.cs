@@ -5,7 +5,10 @@ using System.Runtime.InteropServices;
 public class TTSPlugin : MonoBehaviour {
 
 	// to keep track of the speech
-	public bool isSpeaking { get; private set; } = false;
+	private bool _isSpeaking = false;
+	public bool isSpeaking { 
+		get { return _isSpeaking; } 
+	}
 
 	private const string parameterDelimiter = "<#>";
 
@@ -42,12 +45,12 @@ public class TTSPlugin : MonoBehaviour {
 	// All functions below are called from objc plugin via UnitySendMessage
 
 	public void DidStartSpeaking(string text) {
-		isSpeaking = true;
+		_isSpeaking = true;
 		didStartSpeakingHandler(text);
 	}
 
 	public void DidFinishSpeaking() {
-		isSpeaking = false;
+		_isSpeaking = false;
 		didFinishSpeakingHandler();
 	}
 
