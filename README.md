@@ -2,11 +2,27 @@
 
 ## Created By:
 Eralp Karaduman  
-[eralpkaraduman.com](http://eralpkaraduman.com)
+[eralpkaraduman.com](http://eralpkaraduman.com)  
 [eralp@eralpkaraduman.com](mailto:eralp@eralpkaraduman.com)
 
+## Trying It Out:
 
-## Index of Significant Files:
+- Open TTSTest folder/project in Unity3D
+- Change build setting to iOS
+- Have an iOS device attached ( doesn't build for simulator by default)
+- Build!
+- Tap the screen once it prompts
+- It will speak a quote from HAL9000
+
+## Features:
+
+- Lets you know when it starts speaking.
+- Lets you know when it finishes speaking.
+- Lets you know when it reads a spesific word of the text.
+
+See the `TTSTest.cs` class in TTSTest Unity3D project for details.
+
+## Index of Significant Locations:
 
 - ### TTS_seriously_eralp.mov  
   *Video recording demo of the compiled Unity3D project on iOS*
