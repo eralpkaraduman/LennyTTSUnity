@@ -6,7 +6,7 @@
 //  Copyright © 2016 Super Damage. All rights reserved.
 //
 
-@interface TTSPlugin : NSObject
+@interface TTSPlugin : NSObject 
 
 - (void) beginSpeakingWithString: (NSString*)textString;
 
