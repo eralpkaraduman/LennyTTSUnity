@@ -6,8 +6,8 @@
 //  Copyright © 2016 Super Damage. All rights reserved.
 //
 
-@interface TTSPlugin : NSObject 
+@interface TTSPlugin: NSObject
 
-- (void)beginSpeakingWithString: (NSString*)textString withVoice: (NSString*)voiceName;
+- (void)beginSpeakingWithString:(NSString*)textString withVoice:(NSString*)voiceName;
 
 @end

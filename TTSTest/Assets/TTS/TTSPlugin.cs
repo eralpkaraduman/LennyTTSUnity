@@ -4,53 +4,60 @@ using System.Runtime.InteropServices;
 
 public class TTSPlugin : MonoBehaviour {
 
-	bool _isSpeaking = false;
+	// to keep track of the speech
+	public bool isSpeaking { get; private set; } = false;
 
-	public bool isSpeaking {
-		get { return _isSpeaking; }
-	}
+	private const string parameterDelimiter = "<#>";
 
+	// this is linked to function void BeginSpeaking(char* text, char* voice) in TTSPlugin.m objc class 
 	[DllImport ("__Internal")]
 	private static extern void BeginSpeaking (string text, string voiceName);
 
-	public delegate void DidStartSpeakingDelegate(string text);
-	public DidStartSpeakingDelegate didStartSpeakingDelegate;
+	// delegates to let the user of the plugin watch the status
 
-	public delegate void DidFinishSpeakingDelegate();
-	public DidFinishSpeakingDelegate didFinishSpeakingDelegate;
+	// speaking just started
+	public delegate void DidStartSpeakingHandler(string text);
+	public DidStartSpeakingHandler didStartSpeakingHandler;
 
-	public delegate void WillSpeakSubStringDelegate(string allString, string subString);
-	public WillSpeakSubStringDelegate willSpeakSubStringDelegate;
+	// speaking finished
+	public delegate void DidFinishSpeakingHandler();
+	public DidFinishSpeakingHandler didFinishSpeakingHandler;
 
+	// will start speaking a part of string
+	// subString is the part of that it will speak
+	// allString is the entire string it started to speak
+	public delegate void WillSpeakSubStringHandler(string allString, string subString);
+	public WillSpeakSubStringHandler willSpeakSubStringHandler;
+
+	// to initiate the speech
 	public void Begin(string text) {
 
+		// This part only runs if environment is ios and not the editor
 		#if UNITY_IPHONE && !UNITY_EDITOR
 		BeginSpeaking (text, "Aaron");
-		_isSpeaking = true;
+		isSpeaking = true;
 		#endif
 	}
 
+	// All functions below are called from objc plugin via UnitySendMessage
+
 	public void DidStartSpeaking(string text) {
-		_isSpeaking = true;
-		didStartSpeakingDelegate (text);
+		isSpeaking = true;
+		didStartSpeakingHandler(text);
 	}
 
 	public void DidFinishSpeaking() {
-		_isSpeaking = false;
-		didFinishSpeakingDelegate ();
+		isSpeaking = false;
+		didFinishSpeakingHandler();
 	}
 
-	public void WillSpeakSubString(string csvParams) {
+	public void WillSpeakSubString(string joinedParams) {
 
-		//Debug.Log ("CSV: "+csvParams);
-
-		string[] strParams = csvParams.Split ("<#>".ToCharArray());
+		// splits joined parameters into seperate paramters
+		string[] strParams = joinedParams.Split (parameterDelimiter.ToCharArray());
 		string subString = strParams[0];
 		string allString = strParams[1];
 
-		Debug.Log ("CSV: allstring: "+allString);
-		Debug.Log ("CSV: subString: "+subString);
-
-		willSpeakSubStringDelegate (allString, subString);
+		willSpeakSubStringHandler (allString, subString);
 	}
 }
