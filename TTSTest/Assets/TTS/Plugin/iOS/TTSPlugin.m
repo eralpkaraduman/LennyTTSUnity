@@ -56,6 +56,8 @@ void BeginSpeaking(char* text, char* voice) {
 - (void)beginSpeakingWithString: (NSString*)textString withVoice: (NSString*)voiceName {
 
     AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc] initWithString:textString];
+    utterance.preUtteranceDelay = 0.6f;
+    utterance.postUtteranceDelay = 0.6f;
     utterance.pitchMultiplier = 0.3f;
     utterance.rate = 0.4f;
 
@@ -102,7 +104,7 @@ void BeginSpeaking(char* text, char* voice) {
     NSString *stringLocation = [NSString stringWithFormat:@"%ld", location];
     NSString *stringLength = [NSString stringWithFormat:@"%ld", length];
     NSArray *paramsArray = @[subString, string, stringLocation, stringLength];
-    NSString *csvParam = [paramsArray componentsJoinedByString:@", "];
+    NSString *csvParam = [paramsArray componentsJoinedByString:@"<#>"];
 
     [self callUnityFunction:WillSpeakSubStringFunctionName withParam:csvParam];
 }
@@ -121,11 +123,10 @@ void BeginSpeaking(char* text, char* voice) {
 
 - (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer willSpeakRangeOfSpeechString:(NSRange)characterRange utterance:(AVSpeechUtterance *)utterance {
 
-    NSString *string = [utterance.speechString substringWithRange:NSMakeRange(0, characterRange.location + characterRange.length)];
     NSString *subString = [utterance.speechString substringWithRange:characterRange];
 
     [self willSpeakSubString:subString
-                    ofString:string
+                    ofString:utterance.speechString
                   atLocation:characterRange.location
                     inLength:characterRange.length];
 
