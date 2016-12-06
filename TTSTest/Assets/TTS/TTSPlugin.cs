@@ -5,14 +5,21 @@ using System.Runtime.InteropServices;
 public class TTSPlugin : MonoBehaviour {
 
 	[DllImport ("__Internal")]
-	private static extern void FooPluginFunction(string text);
+	private static extern void BeginSpeaking (string text);
 
-	public void CallNativePlugin(string text) {
-		Debug.Log ("TTS: Calling native plugin..");
-		FooPluginFunction (text);
+	public void Begin(string text) {
+		BeginSpeaking (text);
 	}
 
-	public void HelloUnity(string message) {
-		Debug.Log ("TTS: "+ message);
+	public void DidStartSpeaking(string text) {
+		Debug.Log ("TTS: DidStartSpeaking:"+ text);
+	}
+
+	public void DidFinishSpeaking() {
+		Debug.Log ("TTS: DidFinishSpeaking");
+	}
+
+	public void WillSpeakSubString(string csvParams) {
+		Debug.Log ("TTS: WillSpeakSubString:"+ csvParams);
 	}
 }

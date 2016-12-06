@@ -25,11 +25,11 @@ static NSString* const VoiceName = @"Aaron";
 
 #pragma mark - Exposed to Unity
 
-void Setup() {
-    pluginInstance = [[TTSPlugin alloc] init];
-}
-
 void BeginSpeaking(char* text) {
+
+    if (pluginInstance == nil) {
+        pluginInstance = [[TTSPlugin alloc] init];
+    }
 
     NSString *utf8String = [NSString stringWithCString:text encoding:NSUTF8StringEncoding];
     [pluginInstance beginSpeakingWithString:utf8String];
@@ -67,6 +67,8 @@ void BeginSpeaking(char* text) {
     }
 
     [_synthesizer speakUtterance:utterance];
+
+    NSLog(@"begin speaking");
 }
 
 #pragma mark - Calling Unity functions
@@ -99,8 +101,6 @@ void BeginSpeaking(char* text) {
     NSString *csvParam = [paramsArray componentsJoinedByString:@", "];
 
     [self callUnityFunction:WillSpeakSubStringFunctionName withParam:csvParam];
-
-    NSLog(@"%@", csvParam);
 }
 
 #pragma mark - AVSpeechSynthesizerDelegate

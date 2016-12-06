@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c2e5280623114b9c991ad7a245e67a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tts: {fileID: 1917415050}
+  tts: {fileID: 114000012414303092, guid: a797b0924032b4cb898fdf7cb58b99fe, type: 2}
 --- !u!4 &176087870
 Transform:
   m_ObjectHideFlags: 0
@@ -260,9 +260,3 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &1917415050 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114000012414303092, guid: a797b0924032b4cb898fdf7cb58b99fe,
-    type: 2}
-  m_PrefabInternal: {fileID: 326169845}
-  m_Script: {fileID: 11500000, guid: 468521c4d56cc43bc92e10f0f025f378, type: 3}
