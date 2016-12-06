@@ -15,24 +15,24 @@ void UnitySendMessage( const char * className, const char * methodName, const ch
 }
 #endif
 
-TTSPlugin *pluginInstance;
+static TTSPlugin *pluginInstance;
 
 static char* UnityObjectName = "TTSPlugin";
 static NSString* const DidStartSpeakingFunctionName = @"DidStartSpeaking";
 static NSString* const DidFinishSpeakingFunctionName = @"DidFinishSpeaking";
 static NSString* const WillSpeakSubStringFunctionName = @"WillSpeakSubString";
-static NSString* const VoiceName = @"Aaron";
 
 #pragma mark - Exposed to Unity
 
-void BeginSpeaking(char* text) {
+void BeginSpeaking(char* text, char* voice) {
 
     if (pluginInstance == nil) {
         pluginInstance = [[TTSPlugin alloc] init];
     }
 
     NSString *utf8String = [NSString stringWithCString:text encoding:NSUTF8StringEncoding];
-    [pluginInstance beginSpeakingWithString:utf8String];
+    NSString *utf8Voice = [NSString stringWithCString:voice encoding:NSUTF8StringEncoding];
+    [pluginInstance beginSpeakingWithString:utf8String withVoice:utf8Voice];
 }
 
 #pragma mark - AVSpeechSynthesizer implementation
@@ -53,16 +53,20 @@ void BeginSpeaking(char* text) {
     return self;
 }
 
-- (void)beginSpeakingWithString: (NSString*)textString {
+- (void)beginSpeakingWithString: (NSString*)textString withVoice: (NSString*)voiceName {
+
     AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc] initWithString:textString];
     utterance.pitchMultiplier = 0.3f;
     utterance.rate = 0.4f;
 
-    for (AVSpeechSynthesisVoice *voice in [AVSpeechSynthesisVoice speechVoices]) {
+    if (voiceName != nil) {
 
-        if ([voice.name isEqualToString:VoiceName]) {
-            utterance.voice = voice;
-            break;
+        for (AVSpeechSynthesisVoice *voice in [AVSpeechSynthesisVoice speechVoices]) {
+
+            if ([voice.name isEqualToString:voiceName]) {
+                utterance.voice = voice;
+                break;
+            }
         }
     }
 
@@ -75,8 +79,8 @@ void BeginSpeaking(char* text) {
 
 - (void)callUnityFunction: (NSString*)unityFunction withParam: (NSString*)param {
 
-    char *utf8FunctionName = (char*)[param UTF8String];
-    char *utf8param = nil;
+    char *utf8FunctionName = (char*)[unityFunction UTF8String];
+    char *utf8param = (char*)[@"" UTF8String];
 
     if (param != nil) {
         utf8param = (char*)[param UTF8String];

@@ -5,10 +5,10 @@ using System.Runtime.InteropServices;
 public class TTSPlugin : MonoBehaviour {
 
 	[DllImport ("__Internal")]
-	private static extern void BeginSpeaking (string text);
+	private static extern void BeginSpeaking (string text, string voiceName);
 
 	public void Begin(string text) {
-		BeginSpeaking (text);
+		BeginSpeaking (text, "Aaron");
 	}
 
 	public void DidStartSpeaking(string text) {

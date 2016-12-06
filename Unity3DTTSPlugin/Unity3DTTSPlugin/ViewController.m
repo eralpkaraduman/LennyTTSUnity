@@ -19,7 +19,8 @@
     [super viewDidLoad];
 
     _tts = [[TTSPlugin alloc] init];
-    [_tts beginSpeakingWithString:@"I know that you and Frank were planning to disconnect me, and I'm afraid that's something I cannot allow to happen."];
+    NSString *testString = @"I know that you and Frank were planning to disconnect me, and I'm afraid that's something I cannot allow to happen.";
+    [_tts beginSpeakingWithString:testString withVoice:@"Karen"];
 }
 
 @end

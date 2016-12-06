@@ -8,6 +8,6 @@
 
 @interface TTSPlugin : NSObject 
 
-- (void) beginSpeakingWithString: (NSString*)textString;
+- (void)beginSpeakingWithString: (NSString*)textString withVoice: (NSString*)voiceName;
 
 @end
