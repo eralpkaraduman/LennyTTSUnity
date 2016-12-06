@@ -11,6 +11,7 @@ Eralp Karaduman
 - Change build setting to iOS
 - Have an iOS device attached ( doesn't build for simulator by default)
 - Build!
+- Change iOS dev team id, provisioning & signing
 - Tap the screen once it prompts
 - It will speak a quote from HAL9000
 
